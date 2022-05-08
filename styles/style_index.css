@@ -1,8 +1,77 @@
-/*@import "../sass/utils/variables";
-@import "../sass/utils/functions";
-@import "../sass/utils/mixins";
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  background: #f6f6f6;
+}
 
-@import "../sass/base/box-sizing";
-@import "../sass/base/fonts.scss";*/
+* a {
+  text-decoration: none;
+  color: white;
+}
+
+main {
+  margin: 0;
+  padding: 0;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Header Logo*/
+.header {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  box-shadow: 0px 5px 6px 0px rgba(0, 0, 0, 0.2);
+}
+.header__logo {
+  height: 50px;
+  padding: 20px 0 15px 0;
+}
+
+/*Localisation*/
+.location {
+  background: #e4e4e4;
+  color: #464646;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.location__city {
+  font-weight: 400;
+  margin-left: 12px;
+}
+
+/*Footer*/
+.footer {
+  width: 100%;
+  background-color: rgba(53, 53, 53, 0.8549019608);
+}
+.footer__list {
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.footer__list__logo {
+  height: 25px;
+  margin-top: 15px;
+  margin-left: 35px;
+}
+.footer__list__ul {
+  list-style-type: none;
+  line-height: 180%;
+}
+.footer__list__li i {
+  margin-right: 10px;
+  font-size: 100%;
+  color: white;
+}
 
 /*# sourceMappingURL=style_index.css.map */
