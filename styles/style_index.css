@@ -71,12 +71,14 @@ main {
 }
 .mission__btn {
   opacity: 1;
-  background: linear-gradient(180deg, rgb(255, 121, 218) 0%, rgb(147, 86, 220) 100%);
+  background: linear-gradient(180deg, #FF79DA 0%, #9356DC 100%);
   color: white;
-  padding: 0 20px;
+  padding: 20px 20px;
   border-radius: 50px;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
   border: transparent;
+  font-size: medium;
+  font-weight: bold;
 }
 .mission__btn:hover {
   opacity: 0.8;
@@ -138,6 +140,7 @@ main {
   align-items: center;
   position: absolute;
   background-color: #99e2d0;
+  border-radius: 4px;
   top: 20px;
   right: -50px;
 }
@@ -182,7 +185,7 @@ main {
 /*Footer*/
 .footer {
   width: 100%;
-  background-color: rgba(53, 53, 53, 0.8549019608);
+  background-color: #353535;
 }
 .footer__list {
   padding: 20px 0;
@@ -195,7 +198,8 @@ main {
 .footer__list__logo {
   height: 25px;
   margin-top: 15px;
-  margin-left: 27%;
+  margin-left: 10px;
+  filter: invert(1);
 }
 .footer__list__ul {
   list-style-type: none;
@@ -203,8 +207,10 @@ main {
 }
 .footer__list__li i {
   margin-right: 10px;
-  font-size: 100%;
   color: white;
+}
+.footer__list__utensils {
+  font-size: 20px;
 }
 
 /*# sourceMappingURL=style_index.css.map */
