@@ -89,7 +89,7 @@ main {
     &__list {
         &__text {
             background-color: #f6f6f6;
-            
+
         }
     }
 }
@@ -132,6 +132,7 @@ main {
                 @include center-flexbox;
                 position: absolute;
                 background-color: #99e2d0;
+                border-radius: 4px;
                 top: 20px;
                 right: -50px;
                 & p {
@@ -180,7 +181,7 @@ main {
 
 .footer {
     width: 100%;
-    background-color: #353535da;
+    background-color: #353535;
     &__list {
         padding: 20px 0;
         margin-left: -20px;
@@ -192,7 +193,8 @@ main {
         &__logo {
             height: 25px;
             margin-top: 15px;
-            margin-left: 27%;
+            margin-left: 10px;
+            filter: invert(1);
         }
 
         &__ul {
@@ -202,8 +204,11 @@ main {
 
         &__li i {
             margin-right: 10px;
-            font-size: 100%;
             color: white;
+        }
+
+        &__utensils {
+            font-size: 20px;
         }
     }
 }
