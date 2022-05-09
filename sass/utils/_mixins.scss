@@ -3,3 +3,20 @@
     justify-content: center;
     align-items: center;
 }
+
+@mixin style-button {
+    opacity: 1;
+    background: $gradient;
+    color: white;
+    padding: 0 20px;
+    border-radius: 50px;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.4);
+    border: transparent;
+}
+
+@mixin hover-button {
+    opacity: 0.8;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.7);
+}
