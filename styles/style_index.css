@@ -1,3 +1,34 @@
+/*Footer*/
+.footer {
+  width: 100%;
+  background-color: #353535;
+}
+.footer__list {
+  padding: 20px 0;
+  margin-left: -15px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.footer__list__logo {
+  height: 25px;
+  margin-top: 15px;
+  margin-left: 10px;
+  filter: invert(1);
+}
+.footer__list__ul {
+  list-style-type: none;
+  line-height: 180%;
+}
+.footer__list__li i {
+  margin-right: 10px;
+  color: white;
+}
+.footer__list__utensils {
+  font-size: 20px;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   margin: 0;
@@ -18,6 +49,73 @@ main {
   align-items: center;
 }
 
+/*Spinner*/
+.spinner {
+  height: 100%;
+  background: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 20;
+  animation: spinner 2s linear;
+  visibility: hidden;
+}
+.spinner__border {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid #9356DC;
+  border-top: 5px solid #9356DC;
+  border-bottom: 5px solid #9356DC;
+  border-radius: 20%;
+  width: 80px;
+  height: 80px;
+  margin: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  animation: spinner-border 2s linear;
+  z-index: 10;
+  visibility: hidden;
+}
+.spinner__center {
+  width: 15px;
+  height: 15px;
+  border-radius: 20%;
+  background-color: #9356DC;
+}
+
+@keyframes spinner {
+  0% {
+    visibility: visible;
+    opacity: 0.9;
+  }
+  70% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+@keyframes spinner-border {
+  0% {
+    visibility: visible;
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(200deg);
+    opacity: 0;
+    visibility: hidden;
+  }
+}
 /*Header Logo*/
 .header {
   position: relative;
@@ -35,8 +133,8 @@ main {
 
 /*Localisation*/
 .location {
-  background: #e4e4e4;
-  color: #464646;
+  background: #e9e9e9;
+  color: #505050;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -78,7 +176,7 @@ main {
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
   border: transparent;
   font-size: medium;
-  font-weight: bold;
+  margin-top: 10px;
 }
 .mission__btn:hover {
   opacity: 0.8;
@@ -92,12 +190,57 @@ main {
   width: 100%;
   max-width: 1200px;
   background-color: white;
-  padding: 0;
+  padding: 5px 0 25px 0;
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
+}
+.process__title {
+  margin: 30px 0px 5px 40px;
+}
+.process__list {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  margin-left: 2%;
 }
 .process__list__text {
   background-color: #f6f6f6;
+  border-radius: 20px;
+  margin-bottom: 15px;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.16);
+  padding: 20px 160px 20px 0px;
+  font-weight: 500;
+  position: relative;
+  counter-increment: inst;
+}
+.process__list__text i {
+  color: rgb(151, 150, 150);
+  padding: 0 25px 0 30px;
+}
+.process__list__text:hover {
+  opacity: 0.8;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.7);
+  background: #e4d5f6;
+}
+.process__list__text:hover > i {
+  color: #9356DC;
+}
+.process__list__ol {
+  list-style: none;
+  clear: both;
+}
+.process__list__ol li::before {
+  content: counter(inst);
+  background: #9356DC;
+  color: white;
+  border-radius: 100%;
+  padding: 4px 8.5px 4px 8.5px;
+  position: absolute;
+  transform: translateX(-50%);
+  top: 17px;
 }
 
 /*Restaurants*/
@@ -168,6 +311,7 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
   margin-bottom: 20px;
   width: 150%;
   height: 88px;
@@ -177,40 +321,16 @@ main {
 .restaurant__block__info {
   color: black;
   margin-left: 20px;
+  line-height: 10px;
 }
 .restaurant__block__name {
   font-weight: 700;
 }
-
-/*Footer*/
-.footer {
-  width: 100%;
-  background-color: #353535;
-}
-.footer__list {
-  padding: 20px 0;
-  margin-left: -20px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-}
-.footer__list__logo {
-  height: 25px;
-  margin-top: 15px;
-  margin-left: 10px;
-  filter: invert(1);
-}
-.footer__list__ul {
-  list-style-type: none;
-  line-height: 180%;
-}
-.footer__list__li i {
-  margin-right: 10px;
-  color: white;
-}
-.footer__list__utensils {
-  font-size: 20px;
+.restaurant__block__heart {
+  color: black;
+  position: absolute;
+  right: 10%;
+  font-size: 25px;
 }
 
 /*# sourceMappingURL=style_index.css.map */
