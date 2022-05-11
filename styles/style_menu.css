@@ -1,0 +1,31 @@
+/*Footer*/
+.footer {
+  width: 100%;
+  background-color: #353535;
+}
+.footer__list {
+  padding: 20px 0;
+}
+.footer__list__logo {
+  height: 25px;
+  margin-top: 15px;
+  margin-left: 10px;
+  filter: invert(1);
+}
+.footer__list__ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  list-style-type: none;
+  line-height: 180%;
+}
+.footer__list__li i {
+  margin-right: 10px;
+  color: white;
+}
+.footer__list__utensils {
+  font-size: 20px;
+}
+
+/*# sourceMappingURL=style_menu.css.map */
