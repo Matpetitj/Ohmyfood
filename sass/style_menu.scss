@@ -5,3 +5,225 @@
 @import "../sass/base/box-sizing";
 
 @import "../sass/layouts/footer";
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    background: #f6f6f6;
+}
+
+* a {
+    text-decoration: none;
+    color: white;
+}
+
+/*Header Logo*/
+
+.header {
+    position: relative;
+    @include center-flexbox;
+    height: 110px;
+    width: 100%;
+    z-index: 10;
+    box-shadow: 0px 5px 6px 0px rgba(0,0,0,0.20);
+    &__logo img {
+        height: 50px;
+    }
+    & i {
+        position: absolute;
+        color: black;
+        left: 20px; top: 45px;
+        font-size: 20px;
+    }
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+    &__image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+#menu {
+    background: white;
+    width: 100%;
+    @include center-flexbox;
+}
+
+.menu {
+    margin-top: -20%;
+    background: white;
+    padding: 20px 20px 0 20px;
+    width: 100%;
+    max-width: 1200px;
+    border-radius: 50px 50px 0 0;
+    position: relative;
+    &__header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        &__title {
+            font-family: 'Shrikhand', cursive, sans-serif;
+            letter-spacing: 2.5px;
+            font-size: 25px;
+        }
+        &__heart {
+            position: absolute;
+            cursor: pointer;
+            color: black;
+            right: 40px;
+            font-size: 30px;
+        }
+    }
+    &__grid {
+        display: grid;
+        grid-gap: 40px;
+        &__bloc {
+            display: grid;
+            grid-gap: 15px;
+        }
+        &__title {
+            & h3 {
+                position: relative;
+                font-weight: 400;
+                font-size: 18px;
+                text-transform: uppercase;
+                &::after {
+                    content: '';
+                    width: 50px;
+                    height: 4px;
+                    background: $color-tertiary;
+                    position: absolute;
+                    z-index: 20;
+                    left: 0px; bottom: -8px;
+                }
+            }
+        }
+        &__case {
+            position: relative;
+            cursor: pointer;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            width: 100%;
+            height: 70px;
+            border-radius: 15px;
+            background-color: white;
+            box-shadow: 5px 5px 15px 15px rgba(0,0,0,0.10);
+            &:hover .validation__box {
+                @include center-flexbox;
+                animation: slide-left 0.5s ease;
+                transform-origin: right;
+            }
+            &:hover .menu__case__price {
+                padding-right: 70px;
+                transition: 0.5s ease;
+            }
+            .validation__box {
+                display: none;
+                position: absolute;
+                background-color: $color-tertiary;
+                border-radius: 0 15px 15px 0;
+                right: 0px;
+                padding: 0 20px;
+                height: 100%;
+                i {
+                    font-size: 25px;
+                    color: white;
+                    transform: rotate(180deg);
+                    animation: rotate 0.5s both;
+                }
+            }
+            & h3, p {
+                line-height: 5px;
+                margin-left: 15px;
+            }
+        }
+    }
+    &__case {
+        &__dish {
+            margin-left: 20px;
+            white-space: nowrap;
+            overflow: hidden;
+            & p {
+                margin: 0;
+                text-overflow: ellipsis;
+                overflow: hidden;
+            }
+            &-title {
+                font-weight: bold;
+            }
+        }
+        &__price {
+            padding: 0 30px 0 7px;
+            font-weight: bold;
+        }
+    }
+    &__commande {
+        @include center-flexbox;
+        width: 100%;
+        &__button {
+            @include style-button;
+            padding: 18px 50px;
+            margin: 50px 0;
+            font-size: 18px;
+            &:hover {
+                @include hover-button;
+            }
+        }
+    }
+}
+
+.dish-and-price {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media screen and (min-width: 992px) {
+    .menu {
+        margin-top: -3%;
+        
+        &__header {
+            &__title {
+                margin-left: 20px;
+            }
+        }
+        &__grid {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: 1fr;
+        &__case {
+            &:hover .menu__case__price {
+                padding-right: 7%;
+            }
+        }
+       
+    }
+    } 
+    
+    .img {
+        height: 400px;
+        &__image {
+            height: 100%;
+        }
+    }
+
+    .footer {
+        &__list {
+            padding-left: 10%;
+            &__ul {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                max-width: 1440px;
+                }
+            }
+        }
+}
+
