@@ -16,8 +16,7 @@
 }
 
 @mixin hover-button {
-    opacity: 0.8;
     cursor: pointer;
-    transition: 0.3s;
     box-shadow: 0 0 10px 0 rgba(0,0,0,0.7);
+    background: darken($color-secondary, 1%);
 }

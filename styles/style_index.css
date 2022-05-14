@@ -177,10 +177,9 @@ main {
   margin-top: 10px;
 }
 .mission__btn:hover {
-  opacity: 0.8;
   cursor: pointer;
-  transition: 0.3s;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.7);
+  background: #ff74d9;
 }
 
 /*Process*/
@@ -226,10 +225,9 @@ main {
   padding: 0 25px 0 30px;
 }
 .process__list__text:hover {
-  opacity: 0.8;
   cursor: pointer;
-  transition: 0.3s;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.7);
+  background: #ff74d9;
   background: #e4d5f6;
 }
 .process__list__text:hover > i {

@@ -62,7 +62,7 @@ body {
 
 .img {
   width: 100%;
-  height: 100%;
+  height: 380px;
 }
 .img__image {
   width: 100%;
@@ -93,7 +93,8 @@ body {
 }
 .menu__header__title {
   font-family: "Shrikhand", cursive, sans-serif;
-  letter-spacing: 2.5px;
+  letter-spacing: 2.2px;
+  font-weight: 500;
   font-size: 25px;
 }
 .menu__header__heart {
@@ -119,7 +120,7 @@ body {
 }
 .menu__grid__title h3::after {
   content: "";
-  width: 50px;
+  width: 45px;
   height: 4px;
   background: #99E2D0;
   position: absolute;
@@ -205,10 +206,9 @@ body {
   font-size: 18px;
 }
 .menu__commande__button:hover {
-  opacity: 0.8;
   cursor: pointer;
-  transition: 0.3s;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.7);
+  background: #ff74d9;
 }
 
 .dish-and-price {
