@@ -72,10 +72,18 @@ body {
         &__heart {
             position: absolute;
             cursor: pointer;
-            color: black;
             right: 40px;
             font-size: 30px;
+            .fas {
+                position: absolute;
+                right: 0px; top: 2px;
+                font-size: 31px;
+                color: $color-primary;
+            }
         }
+        /*background: -webkit-linear-gradient($color-primary, $color-secondary);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;*/
     }
     &__grid {
         display: grid;
@@ -172,6 +180,25 @@ body {
                 @include hover-button;
             }
         }
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes slide-left {
+    0% {
+        transform: scaleX(0);
+    }
+
+    100% {
+        transform: scaleX(1);
     }
 }
 

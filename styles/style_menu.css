@@ -90,6 +90,9 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
+  /*background: -webkit-linear-gradient($color-primary, $color-secondary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;*/
 }
 .menu__header__title {
   font-family: "Shrikhand", cursive, sans-serif;
@@ -100,9 +103,15 @@ body {
 .menu__header__heart {
   position: absolute;
   cursor: pointer;
-  color: black;
   right: 40px;
   font-size: 30px;
+}
+.menu__header__heart .fas {
+  position: absolute;
+  right: 0px;
+  top: 2px;
+  font-size: 31px;
+  color: #9356DC;
 }
 .menu__grid {
   display: grid;
@@ -211,6 +220,22 @@ body {
   background: #ff74d9;
 }
 
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes slide-left {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
 .dish-and-price {
   width: 100%;
   display: flex;

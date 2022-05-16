@@ -293,7 +293,24 @@ main {
             color: black;
             position: absolute;
             right: 10%;
-            font-size: 25px;
+            font-size: 28px;
+            &:hover > .far {
+                opacity: 0;
+            }
+            .far {
+                position: absolute;
+                right: 0px;
+            }
+            .fas {
+                opacity: 0;
+                background: -webkit-linear-gradient($color-primary, $color-secondary);
+                /*-webkit-*/background-clip: text;
+                /*-webkit-text-fill-color: transparent;*/
+                &:hover {
+                    opacity: 1;
+                    transition: 0.5s;
+                }
+            }
         }
     }
 }

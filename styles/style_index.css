@@ -335,7 +335,25 @@ main {
   color: black;
   position: absolute;
   right: 10%;
-  font-size: 25px;
+  font-size: 28px;
+}
+.restaurant__block__heart:hover > .far {
+  opacity: 0;
+}
+.restaurant__block__heart .far {
+  position: absolute;
+  right: 0px;
+}
+.restaurant__block__heart .fas {
+  opacity: 0;
+  background: -webkit-linear-gradient(#9356DC, #FF79DA);
+  /*-webkit-*/
+  background-clip: text;
+  /*-webkit-text-fill-color: transparent;*/
+}
+.restaurant__block__heart .fas:hover {
+  opacity: 1;
+  transition: 0.5s;
 }
 
 /*Responsive*/
