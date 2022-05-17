@@ -1,3 +1,15 @@
+.inputcheck {
+  visibility: hidden;
+}
+
+input[type=checkbox]:checked ~ i {
+  font-weight: 900;
+  background: linear-gradient(45deg, rgb(255, 121, 218) 0%, rgb(147, 86, 220) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: animheart 500ms;
+}
+
 /*Footer*/
 .footer {
   width: 100%;
@@ -90,9 +102,6 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
-  /*background: -webkit-linear-gradient($color-primary, $color-secondary);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;*/
 }
 .menu__header__title {
   font-family: "Shrikhand", cursive, sans-serif;
@@ -101,17 +110,10 @@ body {
   font-size: 25px;
 }
 .menu__header__heart {
-  position: absolute;
   cursor: pointer;
+  position: absolute;
   right: 40px;
   font-size: 30px;
-}
-.menu__header__heart .fas {
-  position: absolute;
-  right: 0px;
-  top: 2px;
-  font-size: 31px;
-  color: #9356DC;
 }
 .menu__grid {
   display: grid;

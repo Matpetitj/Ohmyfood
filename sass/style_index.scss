@@ -1,6 +1,7 @@
 @import "../sass/utils/variables";
 @import "../sass/utils/functions";
 @import "../sass/utils/mixins";
+@import "../sass/base/checkbox";
 
 @import "../sass/base/box-sizing";
 
@@ -290,27 +291,11 @@ main {
             font-weight: 700;
         }
         &__heart {
-            color: black;
+            cursor: pointer;
             position: absolute;
-            right: 10%;
-            font-size: 28px;
-            &:hover > .far {
-                opacity: 0;
-            }
-            .far {
-                position: absolute;
-                right: 0px;
-            }
-            .fas {
-                opacity: 0;
-                background: -webkit-linear-gradient($color-primary, $color-secondary);
-                /*-webkit-*/background-clip: text;
-                /*-webkit-text-fill-color: transparent;*/
-                &:hover {
-                    opacity: 1;
-                    transition: 0.5s;
-                }
-            }
+            right: 40px;
+            font-size: 30px;
+            color: black;
         }
     }
 }

@@ -1,3 +1,15 @@
+.inputcheck {
+  visibility: hidden;
+}
+
+input[type=checkbox]:checked ~ i {
+  font-weight: 900;
+  background: linear-gradient(45deg, rgb(255, 121, 218) 0%, rgb(147, 86, 220) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: animheart 500ms;
+}
+
 /*Footer*/
 .footer {
   width: 100%;
@@ -332,28 +344,11 @@ main {
   font-weight: 700;
 }
 .restaurant__block__heart {
+  cursor: pointer;
+  position: absolute;
+  right: 40px;
+  font-size: 30px;
   color: black;
-  position: absolute;
-  right: 10%;
-  font-size: 28px;
-}
-.restaurant__block__heart:hover > .far {
-  opacity: 0;
-}
-.restaurant__block__heart .far {
-  position: absolute;
-  right: 0px;
-}
-.restaurant__block__heart .fas {
-  opacity: 0;
-  background: -webkit-linear-gradient(#9356DC, #FF79DA);
-  /*-webkit-*/
-  background-clip: text;
-  /*-webkit-text-fill-color: transparent;*/
-}
-.restaurant__block__heart .fas:hover {
-  opacity: 1;
-  transition: 0.5s;
 }
 
 /*Responsive*/
