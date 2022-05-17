@@ -110,7 +110,7 @@ body {
             height: 70px;
             border-radius: 15px;
             background-color: white;
-            box-shadow: 5px 5px 15px 15px rgba(0,0,0,0.10);
+            box-shadow: 5px 5px 5px 3px rgba(0,0,0,0.10);
             &:hover .validation__box {
                 @include center-flexbox;
                 animation: slide-left 0.5s ease;
@@ -172,25 +172,6 @@ body {
                 @include hover-button;
             }
         }
-    }
-}
-
-@keyframes rotate {
-    0% {
-        transform: rotate(0);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
-@keyframes slide-left {
-    0% {
-        transform: scaleX(0);
-    }
-
-    100% {
-        transform: scaleX(1);
     }
 }
 

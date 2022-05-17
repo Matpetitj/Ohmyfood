@@ -57,35 +57,6 @@ main {
     }
 }
 
-@keyframes spinner {
-    0% {
-        opacity: 0.8;
-        visibility: visible;
-    }
-    70% {
-        opacity: 0.8;
-    }
-    100% {
-        opacity: 0;
-        visibility: hidden;
-    }
-}
-
-@keyframes spinner-border {
-    0% {
-        opacity: 1;
-        visibility: visible;
-    }
-    70% {
-        opacity: 1;
-    }
-    100% {
-        transform: rotate(200deg);
-        opacity: 0;
-        visibility: hidden;
-    }
-}
-
 /*Header Logo*/
 
 .header {

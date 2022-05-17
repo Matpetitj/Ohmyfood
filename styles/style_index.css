@@ -1,3 +1,48 @@
+/*Keyframes acceuil*/
+@keyframes spinner {
+  0% {
+    opacity: 0.8;
+    visibility: visible;
+  }
+  70% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+@keyframes spinner-border {
+  0% {
+    opacity: 1;
+    visibility: visible;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(200deg);
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+/*Keyfrales menu*/
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes slide-left {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
 .inputcheck {
   visibility: hidden;
 }
@@ -10,6 +55,51 @@ input[type=checkbox]:checked ~ i {
   animation: animheart 500ms;
 }
 
+/*Keyframes acceuil*/
+@keyframes spinner {
+  0% {
+    opacity: 0.8;
+    visibility: visible;
+  }
+  70% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+@keyframes spinner-border {
+  0% {
+    opacity: 1;
+    visibility: visible;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(200deg);
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+/*Keyfrales menu*/
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes slide-left {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
 /*Footer*/
 .footer {
   width: 100%;
@@ -99,33 +189,6 @@ main {
   background-color: #9356DC;
 }
 
-@keyframes spinner {
-  0% {
-    opacity: 0.8;
-    visibility: visible;
-  }
-  70% {
-    opacity: 0.8;
-  }
-  100% {
-    opacity: 0;
-    visibility: hidden;
-  }
-}
-@keyframes spinner-border {
-  0% {
-    opacity: 1;
-    visibility: visible;
-  }
-  70% {
-    opacity: 1;
-  }
-  100% {
-    transform: rotate(200deg);
-    opacity: 0;
-    visibility: hidden;
-  }
-}
 /*Header Logo*/
 .header {
   position: relative;
@@ -190,8 +253,7 @@ main {
 }
 .mission__btn:hover {
   cursor: pointer;
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.7);
-  background: #ff74d9;
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.6);
 }
 
 /*Process*/
@@ -238,8 +300,7 @@ main {
 }
 .process__list__text:hover {
   cursor: pointer;
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.7);
-  background: #ff74d9;
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.6);
   background: #e4d5f6;
 }
 .process__list__text:hover > i {

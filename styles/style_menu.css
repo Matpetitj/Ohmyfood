@@ -1,3 +1,21 @@
+/*Keyframes acceuil*/
+/*Keyfrales menu*/
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes slide-left {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
 .inputcheck {
   visibility: hidden;
 }
@@ -10,6 +28,24 @@ input[type=checkbox]:checked ~ i {
   animation: animheart 500ms;
 }
 
+/*Keyframes acceuil*/
+/*Keyfrales menu*/
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes slide-left {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
 /*Footer*/
 .footer {
   width: 100%;
@@ -148,7 +184,7 @@ body {
   height: 70px;
   border-radius: 15px;
   background-color: white;
-  box-shadow: 5px 5px 15px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 5px 5px 5px 3px rgba(0, 0, 0, 0.1);
 }
 .menu__grid__case:hover .validation__box {
   display: flex;
@@ -218,26 +254,9 @@ body {
 }
 .menu__commande__button:hover {
   cursor: pointer;
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.7);
-  background: #ff74d9;
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.6);
 }
 
-@keyframes rotate {
-  0% {
-    transform: rotate(0);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-@keyframes slide-left {
-  0% {
-    transform: scaleX(0);
-  }
-  100% {
-    transform: scaleX(1);
-  }
-}
 .dish-and-price {
   width: 100%;
   display: flex;
