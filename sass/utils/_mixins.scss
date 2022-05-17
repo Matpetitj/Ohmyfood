@@ -51,9 +51,7 @@
     }
 }
 
-
-
-/*Keyfrales menu*/
+/*Keyframes menu*/
 
 @keyframes rotate {
     0% {
@@ -71,5 +69,14 @@
 
     100% {
         transform: scaleX(1);
+    }
+}
+
+@keyframes opacity {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
     }
 }
