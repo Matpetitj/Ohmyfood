@@ -43,7 +43,7 @@
     transform: scaleX(1);
   }
 }
-@keyframes margin-top {
+@keyframes opacity {
   0% {
     opacity: 0;
     margin-top: 20px;
@@ -110,7 +110,7 @@ input[type=checkbox]:checked ~ i {
     transform: scaleX(1);
   }
 }
-@keyframes margin-top {
+@keyframes opacity {
   0% {
     opacity: 0;
     margin-top: 20px;
@@ -251,7 +251,6 @@ body {
 }
 .menu__grid__case {
   position: relative;
-  top: 15px;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -260,8 +259,7 @@ body {
   border-radius: 15px;
   background-color: white;
   box-shadow: 5px 5px 5px 3px rgba(0, 0, 0, 0.1);
-  transition: opacity 1s both;
-  /*animation: fade-in 1500ms ease;*/
+  transition: opacity 2s ease-in;
 }
 .menu__grid__case:hover .validation__box {
   display: flex;
@@ -342,43 +340,43 @@ body {
 }
 
 #case-1 {
-  transition-delay: 0.1s;
-}
-
-#case-2 {
   transition-delay: 0.2s;
 }
 
-#case-3 {
-  transition-delay: 0.3s;
-}
-
-#case-4 {
+#case-2 {
   transition-delay: 0.4s;
 }
 
-#case-5 {
-  transition-delay: 0.5s;
-}
-
-#case-6 {
+#case-3 {
   transition-delay: 0.6s;
 }
 
-#case-7 {
-  transition-delay: 0.7s;
-}
-
-#case-8 {
+#case-4 {
   transition-delay: 0.8s;
 }
 
+#case-5 {
+  transition-delay: 1s;
+}
+
+#case-6 {
+  transition-delay: 1.2s;
+}
+
+#case-7 {
+  transition-delay: 1.4s;
+}
+
+#case-8 {
+  transition-delay: 1.6s;
+}
+
 #case-9 {
-  transition-delay: 0.9s;
+  transition-delay: 1.8s;
 }
 
 #case-10 {
-  transition-delay: 1s;
+  transition-delay: 2s;
 }
 
 @media screen and (min-width: 992px) and (max-width: 1400px) {
