@@ -147,6 +147,7 @@ main {
             padding: 20px 80px 20px 0px;
             font-weight: 500;
             position: relative;
+            white-space: nowrap;
             counter-increment: inst;
             & i {
                 color: rgb(151, 150, 150);
@@ -273,7 +274,7 @@ main {
 
 /*Responsive*/
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 992px) and (max-width: 1200px) {
     .restaurants {
         &__cards {
             display: grid;
@@ -300,17 +301,66 @@ main {
     }
         }
 
+    .process__list {
+        margin-left: -25px;
+        &__text {
+            padding-right: 50px;
+        }
+    }
+
     .footer {
     &__list {
-        padding-left: 10%;
         &__ul {
             display: flex;
             flex-direction: row;
             justify-content: space-between;
             max-width: 1440px;
             }
+            &__li {
+                margin-right: 50px;
+            }
         }
     }    
+}
+
+@media screen and (min-width: 1200px) {
+    .restaurants {
+        &__cards {
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 1em 12em;
+        }
     }
+
+    .process {
+        &__title {
+            margin-left: 8%;
+        }
+
+        &__list {
+            &__ol {
+            width: 100%;
+            display: inline-flex;
+            justify-content: row;
+        }
+        &__text {
+            margin-left: 3%;
+        }
+    }
+    }
+
+    .footer {
+        &__list {
+            padding-left: 10%;
+            &__ul {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                max-width: 1440px;
+                }
+            }
+        }
+}
 
 

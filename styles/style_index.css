@@ -308,6 +308,7 @@ main {
   padding: 20px 80px 20px 0px;
   font-weight: 500;
   position: relative;
+  white-space: nowrap;
   counter-increment: inst;
 }
 .process__list__text i {
@@ -429,7 +430,44 @@ main {
 }
 
 /*Responsive*/
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  .restaurants__cards {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1em 12em;
+  }
+
+  .process__title {
+    margin-left: 8%;
+  }
+  .process__list__ol {
+    width: 100%;
+    display: inline-flex;
+    justify-content: row;
+  }
+  .process__list__text {
+    margin-left: 3%;
+  }
+
+  .process__list {
+    margin-left: -25px;
+  }
+  .process__list__text {
+    padding-right: 50px;
+  }
+
+  .footer__list__ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 1440px;
+  }
+  .footer__list__li {
+    margin-right: 50px;
+  }
+}
+@media screen and (min-width: 1200px) {
   .restaurants__cards {
     display: grid;
     grid-template-rows: 1fr 1fr;
