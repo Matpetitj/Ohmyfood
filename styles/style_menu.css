@@ -43,12 +43,14 @@
     transform: scaleX(1);
   }
 }
-@keyframes opacity {
+@keyframes margin-top {
   0% {
     opacity: 0;
+    margin-top: 20px;
   }
   100% {
     opacity: 1;
+    margin-top: -20px;
   }
 }
 .inputcheck {
@@ -108,12 +110,14 @@ input[type=checkbox]:checked ~ i {
     transform: scaleX(1);
   }
 }
-@keyframes opacity {
+@keyframes margin-top {
   0% {
     opacity: 0;
+    margin-top: 20px;
   }
   100% {
     opacity: 1;
+    margin-top: -20px;
   }
 }
 /*Footer*/
@@ -247,6 +251,7 @@ body {
 }
 .menu__grid__case {
   position: relative;
+  top: 15px;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -255,6 +260,8 @@ body {
   border-radius: 15px;
   background-color: white;
   box-shadow: 5px 5px 5px 3px rgba(0, 0, 0, 0.1);
+  transition: opacity 1s both;
+  /*animation: fade-in 1500ms ease;*/
 }
 .menu__grid__case:hover .validation__box {
   display: flex;
@@ -264,7 +271,7 @@ body {
   transform-origin: right;
 }
 .menu__grid__case:hover .menu__case__price {
-  padding-right: 70px;
+  padding-right: 20%;
   transition: 0.5s ease;
 }
 .menu__grid__case .validation__box {
@@ -334,48 +341,44 @@ body {
   align-items: center;
 }
 
-.appears-with-opacity {
-  animation: fade-in 1000ms ease;
-}
-
 #case-1 {
-  animation-delay: 0.1s;
+  transition-delay: 0.1s;
 }
 
 #case-2 {
-  animation-delay: 0.2s;
+  transition-delay: 0.2s;
 }
 
 #case-3 {
-  animation-delay: 0.3s;
+  transition-delay: 0.3s;
 }
 
 #case-4 {
-  animation-delay: 0.4s;
+  transition-delay: 0.4s;
 }
 
 #case-5 {
-  animation-delay: 0.5s;
+  transition-delay: 0.5s;
 }
 
 #case-6 {
-  animation-delay: 0.6s;
+  transition-delay: 0.6s;
 }
 
 #case-7 {
-  animation-delay: 0.7s;
+  transition-delay: 0.7s;
 }
 
 #case-8 {
-  animation-delay: 0.8s;
+  transition-delay: 0.8s;
 }
 
 #case-9 {
-  animation-delay: 0.9s;
+  transition-delay: 0.9s;
 }
 
 #case-10 {
-  animation-delay: 1s;
+  transition-delay: 1s;
 }
 
 @media screen and (min-width: 992px) and (max-width: 1400px) {
