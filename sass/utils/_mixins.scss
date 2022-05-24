@@ -20,6 +20,17 @@
     box-shadow: 0 0 10px 2px rgba(0,0,0,0.6);
 }
 
+@mixin heart-color {
+    background: linear-gradient(
+      45deg,
+      rgba(255, 121, 218, 1) 0%,
+      rgba(147, 86, 220, 1) 100%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 /*Keyframes acceuil*/
 
 @keyframes spinner {
@@ -72,19 +83,7 @@
     }
 }
 
-@keyframes opacity {
-    0% {
-        opacity: 0;
-        margin-top: 20px;
-    }
-
-    100% {
-        opacity: 1;
-        margin-top: -20px;
-    }
-}
-
-@keyframes myAnim {
+@keyframes slide {
 	0% {
         opacity: 0;
 		transform: translateY(10);
