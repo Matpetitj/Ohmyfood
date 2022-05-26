@@ -1,7 +1,6 @@
 @import "../sass/utils/variables";
 @import "../sass/utils/functions";
 @import "../sass/utils/mixins";
-@import "../sass/base/checkbox";
 
 @import "../sass/base/box-sizing";
 
@@ -314,7 +313,7 @@ main {
             &__ol {
             width: 100%;
             display: inline-flex;
-            justify-content: row;
+            flex-direction: row;
         }
         &__text {
             margin-left: 3%;
@@ -363,7 +362,7 @@ main {
             &__ol {
             width: 100%;
             display: inline-flex;
-            justify-content: row;
+            flex-direction: row;
         }
         &__text {
             margin-left: 3%;

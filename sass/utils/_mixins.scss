@@ -61,36 +61,3 @@
         visibility: hidden;
     }
 }
-
-/*Keyframes menu*/
-
-@keyframes rotate {
-    0% {
-        transform: rotate(0);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
-@keyframes slide-left {
-    0% {
-        transform: scaleX(0);
-    }
-
-    100% {
-        transform: scaleX(1);
-    }
-}
-
-@keyframes slide {
-	0% {
-        opacity: 0;
-		transform: translateY(10);
-	}
-
-	100% {
-        opacity: 1;
-		transform: translateY(-15px);
-	}
-}
