@@ -387,10 +387,6 @@ main {
   z-index: 10;
   font-size: 99%;
 }
-.restaurant__block:hover {
-  box-shadow: 8px 5px 5px #99E2D0;
-  transition: 0.5s;
-}
 
 /*Responsive*/
 @media screen and (min-width: 992px) and (max-width: 1200px) {
