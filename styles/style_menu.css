@@ -316,6 +316,7 @@ body {
 .menu__commande__button:hover {
   cursor: pointer;
   box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.6);
+  background: #ff7edb;
 }
 
 .dish-and-price {

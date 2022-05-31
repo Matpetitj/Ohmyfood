@@ -208,6 +208,7 @@ main {
 .mission__btn:hover {
   cursor: pointer;
   box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.6);
+  background: #ff7edb;
 }
 
 /*Process*/
@@ -256,6 +257,7 @@ main {
 .process__list__text:hover {
   cursor: pointer;
   box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.6);
+  background: #ff7edb;
   background: #e4d5f6;
 }
 .process__list__text:hover > i {

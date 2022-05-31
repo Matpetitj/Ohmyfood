@@ -236,8 +236,8 @@ main {
                 object-fit: cover;
                 border-radius: 20px 20px 0 0;
                 &:hover {
-                box-shadow: 8px -4px 5px $color-tertiary;
-                transition: 0.5s;
+                    box-shadow: 8px -4px 5px $color-tertiary;
+                    transition: 0.5s;
                 }
             }
         }
