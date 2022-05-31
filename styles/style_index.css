@@ -117,7 +117,7 @@ main {
   animation: spinner 2s linear;
   visibility: hidden;
 }
-.spinner__border {
+.spinner__out {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -136,7 +136,7 @@ main {
   right: 0;
   bottom: 0;
 }
-.spinner__center {
+.spinner__in {
   width: 15px;
   height: 15px;
   border-radius: 20%;

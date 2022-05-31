@@ -4,11 +4,7 @@
   
   input[type="checkbox"]:checked ~ i {
     font-weight: 900;
-    background: linear-gradient(
-      45deg,
-      rgba(255, 121, 218, 1) 0%,
-      rgba(147, 86, 220, 1) 100%
-    );
+    background: linear-gradient(45deg,rgba(255, 121, 218, 1) 0%,rgba(147, 86, 220, 1) 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;

@@ -189,7 +189,7 @@ body {
 }
 .menu__header__heart__full {
   position: absolute;
-  right: 40px;
+  right: 39px;
   opacity: 0;
   background: linear-gradient(45deg, rgb(255, 121, 218) 0%, rgb(147, 86, 220) 100%);
   -webkit-background-clip: text;
@@ -204,7 +204,7 @@ body {
 }
 .menu__header__heart__empty {
   position: absolute;
-  right: 40.5px;
+  right: 39.5px;
   top: 41.6px;
   z-index: 10;
   font-size: 99%;
@@ -213,7 +213,7 @@ body {
   display: grid;
   grid-gap: 40px;
 }
-.menu__grid__bloc {
+.menu__grid__block {
   display: grid;
   grid-gap: 15px;
 }
@@ -244,7 +244,7 @@ body {
   border-radius: 15px;
   background-color: white;
   box-shadow: 5px 5px 5px 3px rgba(0, 0, 0, 0.1);
-  animation: slide 1s ease 0s 1 normal forwards;
+  animation: slide 1s ease 0s 1 forwards;
   opacity: 0;
 }
 .menu__grid__case:hover .validation__box {
