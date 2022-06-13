@@ -1,11 +1,11 @@
 /*Keyframes acceuil*/
 @keyframes spinner {
   0% {
-    opacity: 0.8;
+    opacity: 1;
     visibility: visible;
   }
   70% {
-    opacity: 0.8;
+    opacity: 1;
   }
   100% {
     opacity: 0;
@@ -29,11 +29,11 @@
 /*Keyframes acceuil*/
 @keyframes spinner {
   0% {
-    opacity: 0.8;
+    opacity: 1;
     visibility: visible;
   }
   70% {
-    opacity: 0.8;
+    opacity: 1;
   }
   100% {
     opacity: 0;
@@ -283,7 +283,7 @@ main {
   margin: 0;
   background: #f6f6f6;
   padding: 20px;
-  width: 100%;
+  width: 90%;
   max-width: 1200px;
   display: flex;
   justify-content: center;
