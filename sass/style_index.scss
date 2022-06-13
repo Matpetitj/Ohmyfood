@@ -277,6 +277,20 @@ main {
 
 /*Responsive*/
 
+@media screen and (max-width: 375px) {
+    .process {
+        &__list {
+            &__text {
+                padding: 20px 35px 20px 0px;
+            }
+        }
+    }
+
+    .restaurants {
+        width: 70%;
+    }
+}
+
 @media screen and (min-width: 992px) and (max-width: 1200px) {
     .restaurants {
         &__cards {
